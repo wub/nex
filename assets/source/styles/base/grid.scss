@@ -1,0 +1,51 @@
+/* Grid Variables
+--------------------------------------------------- */
+$numColumns:  12;
+$gridWidth: 3;
+$gutterWidth: (100 - ($numColumns * $gridWidth)) / ($numColumns - 1);
+
+
+/* Container
+--------------------------------------------------- */
+.container {
+    max-width: 1000px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+/* Row
+--------------------------------------------------- */
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+
+/* Columns & Offsets
+--------------------------------------------------- */
+[class*="columns-"]:first-child {
+    margin-left: 0;
+}
+[class*="columns-"] {
+    float: left;
+    margin-left: percentage($gutterWidth/100);
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+// Calculate width of columns
+@while $numColumns > 0 {
+  .columns-#{$numColumns} {
+    width: percentage(($numColumns * $gridWidth + ($numColumns - 1) * $gutterWidth)/100);
+  }
+  .offset-by-#{$numColumns} {
+    margin-left: percentage(($numColumns * $gridWidth + ($numColumns) * $gutterWidth)/100);
+  }
+  $numColumns: $numColumns - 1
+}

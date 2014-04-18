@@ -1,0 +1,298 @@
+/*
+* Skeleton V2.0
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 2/2/2014
+*/
+/* Basic
+================================================== */
+body {
+  background: #fff;
+  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; }
+
+/* Typography
+================================================== */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1; }
+
+h1 {
+  font-size: 46px;
+  margin-bottom: 14px; }
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 10px; }
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 8px; }
+
+h4 {
+  font-size: 21px;
+  margin-bottom: 4px; }
+
+h5 {
+  font-size: 17px; }
+
+h6 {
+  font-size: 14px; }
+
+p {
+  margin: 0 0 20px 0; }
+
+p img {
+  margin: 0; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+small {
+  font-size: 80%; }
+
+/* Links
+================================================== */
+a, a:visited {
+  text-decoration: underline;
+  outline: 0; }
+
+a:hover, a:focus {
+  color: green; }
+
+/* Lists
+================================================== */
+ul, ol {
+  padding-left: 18px; }
+
+/* Images
+================================================== */
+img.scale-with-grid {
+  max-width: 100%;
+  height: auto; }
+
+/* #Misc
+================================================== */
+.remove-bottom {
+  margin-bottom: 0 !important; }
+
+.half-bottom {
+  margin-bottom: 10px !important; }
+
+.add-bottom {
+  margin-bottom: 20px !important; }
+
+/* Grid Variables
+--------------------------------------------------- */
+/* Container
+--------------------------------------------------- */
+.container {
+  max-width: 1000px;
+  width: 85%;
+  margin: 0 auto; }
+
+/* Row
+--------------------------------------------------- */
+.row:before, .row:after {
+  content: "";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+/* Columns & Offsets
+--------------------------------------------------- */
+[class*="columns-"]:first-child {
+  margin-left: 0; }
+
+[class*="columns-"] {
+  float: left;
+  margin-left: 5.81818%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.columns-12 {
+  width: 100%; }
+
+.offset-by-12 {
+  margin-left: 105.81818%; }
+
+.columns-11 {
+  width: 91.18182%; }
+
+.offset-by-11 {
+  margin-left: 97%; }
+
+.columns-10 {
+  width: 82.36364%; }
+
+.offset-by-10 {
+  margin-left: 88.18182%; }
+
+.columns-9 {
+  width: 73.54545%; }
+
+.offset-by-9 {
+  margin-left: 79.36364%; }
+
+.columns-8 {
+  width: 64.72727%; }
+
+.offset-by-8 {
+  margin-left: 70.54545%; }
+
+.columns-7 {
+  width: 55.90909%; }
+
+.offset-by-7 {
+  margin-left: 61.72727%; }
+
+.columns-6 {
+  width: 47.09091%; }
+
+.offset-by-6 {
+  margin-left: 52.90909%; }
+
+.columns-5 {
+  width: 38.27273%; }
+
+.offset-by-5 {
+  margin-left: 44.09091%; }
+
+.columns-4 {
+  width: 29.45455%; }
+
+.offset-by-4 {
+  margin-left: 35.27273%; }
+
+.columns-3 {
+  width: 20.63636%; }
+
+.offset-by-3 {
+  margin-left: 26.45455%; }
+
+.columns-2 {
+  width: 11.81818%; }
+
+.offset-by-2 {
+  margin-left: 17.63636%; }
+
+.columns-1 {
+  width: 3%; }
+
+.offset-by-1 {
+  margin-left: 8.81818%; }
+
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+/* Table of Content
+==================================================
+  #Site Styles
+  #Page Styles
+  #Media Queries
+  #Font-Face */
+/* #Site Styles
+================================================== */
+/* #Page Styles
+================================================== */
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) { }
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) { }
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) { }
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) { }
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) { }
+
+/* #Font-Face
+================================================== */
+/*  This is the proper syntax for an @font-face file
+    Just create a "fonts" folder at the root,
+    copy your FontName into code below and remove
+    comment brackets */
+/*  @font-face {
+      font-family: 'FontName';
+      src: url('../fonts/FontName.eot');
+      src: url('../fonts/FontName.eot?iefix') format('eot'),
+           url('../fonts/FontName.woff') format('woff'),
+           url('../fonts/FontName.ttf') format('truetype'),
+           url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+      font-weight: normal;
+      font-style: normal; }
+*/
+/* #Forms
+================================================== */
+input {
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding: 8px 10px 10px;
+  border-radius: 3px;
+  outline: none; }
+
+/* Buttons
+================================================== */
+.button, button {
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid #33485f;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding: 8px 30px 10px;
+  border-radius: 3px;
+  transition: 0.03s all ease-in; }
+  .button:hover, .button.button-filled, button:hover, button.button-filled {
+    color: #fff;
+    background-color: #33485f;
+    border-color: #33485f; }
+  .button.button-filled:hover, button.button-filled:hover {
+    border-color: #253444;
+    background-color: #253444; }
+  .button.button-rounded, button.button-rounded {
+    border-radius: 100px; }
+
+.button.button-positive, button.button-positive {
+  color: #3ec474;
+  border-color: #3ec474; }
+  .button.button-positive:hover, .button.button-positive.button-filled, button.button-positive:hover, button.button-positive.button-filled {
+    color: #fff;
+    background-color: #3ec474;
+    border-color: #3ec474; }
+  .button.button-positive.button-filled:hover, button.button-positive.button-filled:hover {
+    border-color: #33a661;
+    background-color: #33a661; }
+
+.button.button-negative, button.button-negative {
+  color: #df5b3c;
+  border-color: #df5b3c; }
+  .button.button-negative:hover, .button.button-negative.button-filled, button.button-negative:hover, button.button-negative.button-filled {
+    color: #fff;
+    background-color: #df5b3c;
+    border-color: #df5b3c; }
+  .button.button-negative.button-filled:hover, button.button-negative.button-filled:hover {
+    border-color: #d04222;
+    background-color: #d04222; }

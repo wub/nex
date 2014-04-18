@@ -1,0 +1,68 @@
+/*
+* Skeleton V2.0
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 2/2/2014
+*/
+
+/* Basic
+================================================== */
+  body {
+    background: #fff;
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+//    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+//    -webkit-text-size-adjust: 100%;
+ }
+
+
+/* Typography
+================================================== */
+  h1, h2, h3, h4, h5, h6 { line-height: 1.1 }
+  h1 { font-size: 46px; margin-bottom: 14px;}
+  h2 { font-size: 35px; margin-bottom: 10px; }
+  h3 { font-size: 28px; margin-bottom: 8px; }
+  h4 { font-size: 21px; margin-bottom: 4px; }
+  h5 { font-size: 17px; }
+  h6 { font-size: 14px; }
+
+  p { margin: 0 0 20px 0; }
+  p img { margin: 0; }
+
+  em { font-style: italic; }
+  strong { font-weight: bold; }
+  small { font-size: 80%; }
+
+
+/* Links
+================================================== */
+  a, a:visited { text-decoration: underline; outline: 0; }
+  a:hover, a:focus { color: green; }
+
+
+/* Lists
+================================================== */
+ul, ol {
+  padding-left: 18px;
+}
+
+
+/* Images
+================================================== */
+
+img.scale-with-grid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* #Misc
+================================================== */
+  .remove-bottom { margin-bottom: 0 !important; }
+  .half-bottom { margin-bottom: 10px !important; }
+  .add-bottom { margin-bottom: 20px !important; }
+
+

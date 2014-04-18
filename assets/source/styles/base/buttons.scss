@@ -1,0 +1,65 @@
+/* Buttons
+================================================== */
+
+// Todo list
+// - Large and small buttons 
+// - Disabled button
+// - Block level button
+
+.button,
+ button {
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid $primary;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding: 8px 30px 10px;
+  border-radius: 3px;
+  &:hover,
+  &.button-filled {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;  
+  }
+  &.button-filled:hover {
+    border-color: darken($primary, 8%);
+    background-color: darken($primary, 8%);
+  }
+  &.button-rounded {
+    border-radius: 100px;
+  }
+  transition: .03s all ease-in;
+}
+
+.button.button-positive,
+ button.button-positive {
+  color: $positive;
+  border-color: $positive;
+  &:hover,
+  &.button-filled {
+    color: $white;
+    background-color: $positive;
+    border-color: $positive;  
+  }
+  &.button-filled:hover {
+    border-color: darken($positive, 8%);
+    background-color: darken($positive, 8%);
+  }
+}
+
+.button.button-negative,
+ button.button-negative {
+  color: $negative;
+  border-color: $negative;
+  &:hover,
+  &.button-filled {
+    color: $white;
+    background-color: $negative;
+    border-color: $negative;  
+  }
+  &.button-filled:hover {
+    border-color: darken($negative, 8%);
+    background-color: darken($negative, 8%);
+  }
+}
