@@ -657,6 +657,9 @@ img {
   .header .logo {
     display: inline-block;
     float: left; }
+    .header .logo div {
+      visibility: hidden;
+      width: 0; }
 
 .header-search {
   float: left;
