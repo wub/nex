@@ -691,7 +691,8 @@ img {
     cursor: pointer;
     text-decoration: none;
     padding: 13px 17px;
-    color: #999; }
+    color: #999;
+    font-weight: 600; }
     .menu > ul > li > a:hover, .menu > ul > li > span:hover {
       color: #333; }
   .menu > ul > li.menu-open span, .menu > ul > li.menu-open > span:hover {
@@ -711,10 +712,10 @@ img {
   border-top: 4px solid #afdefa; }
   .menu .menu-sub .menu-title {
     color: #afdefa;
-    padding: 2em 0 0.6em;
+    padding: 2em 0 0.2em;
     margin: 0; }
   .menu .menu-sub ul + .menu-title {
-    padding-top: 20px; }
+    padding-top: 30px; }
   .menu .menu-sub a {
     color: #fff;
     text-decoration: none; }

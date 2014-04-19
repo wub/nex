@@ -39,7 +39,6 @@
 }
 
 .menu {
-
     ul {
         margin: 0;
         padding: 0;
@@ -60,6 +59,7 @@
             text-decoration: none;
             padding: 13px 17px;
             color: #999;
+            font-weight: 600;
 
             &:hover {
                 color: #333;
@@ -92,12 +92,12 @@
         .menu-title {
             @extend h3;
             color: $nex-blue;
-            padding: 2em 0 0.6em;
+            padding: 2em 0 .2em;
             margin: 0;
         }
 
         ul + .menu-title {
-            padding-top: 20px;
+            padding-top: 30px;
         }
 
         a {
