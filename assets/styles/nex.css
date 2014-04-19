@@ -600,7 +600,7 @@ td, th {
   padding: 0; }
 
 html, body {
-  font: 18px/1.6 "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: 18px/1.6 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1, h2, h3, .menu .menu-sub .menu-title, h4 {
   font-weight: 600; }
