@@ -638,7 +638,7 @@ img {
   float: left;
   margin-top: 11px;
   font-size: 36px;
-  color: #000; }
+  color: inherit; }
 
 .icon-disk:before {
   content: '\e602'; }
@@ -656,7 +656,10 @@ img {
   height: 50px; }
   .header .logo {
     display: inline-block;
-    float: left; }
+    float: left;
+    color: #000; }
+    .header .logo:hover {
+      color: #777; }
     .header .logo div {
       visibility: hidden;
       width: 0; }

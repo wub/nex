@@ -14,6 +14,11 @@
     .logo {
         display: inline-block;
         float: left;
+        color: #000;
+
+        &:hover {
+            color: #777;
+        }
 
         div {
             visibility: hidden;
@@ -82,11 +87,11 @@
         margin-top: -1px;
         z-index: 99;
         background: #333;
-        border-top: 4px solid #afdefa;
+        border-top: 4px solid $nex-blue;
 
         .menu-title {
             @extend h3;
-            color: #afdefa;
+            color: $nex-blue;
             padding: 2em 0 0.6em;
             margin: 0;
         }
