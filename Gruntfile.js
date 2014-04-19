@@ -13,7 +13,7 @@ module.exports = function (grunt) {
       assets: 'assets',
       src: '<%= project.assets %>/source',
       css: '<%= project.src %>/styles/<%= pkg.name %>.scss',
-      js:  '<%= project.src %>/scripts/<%= pkg.name %>.coffee'
+      js:  '<%= project.src %>/scripts/<%= pkg.name %>.js'
     },
     tag: {
       banner:
@@ -45,25 +45,10 @@ module.exports = function (grunt) {
         }
       }
     },
-    coffee: {
-      dev: {
-        options: {
-          join: true,
-          sourceMap: true
-        },
-        files: {
-          '<%= project.assets %>/scripts/<%= pkg.name %>.js': '<%= project.js %>', // 1:1 compile
-        }
-      }
-    },
     watch: {
       sass: {
         files: '<%= project.src %>/styles/**/*.scss',
         tasks: ['sass:dev']
-      },
-      coffee: {
-        files: '<%= project.src %>/scripts/{,*/}*.coffee',
-        tasks: ['coffee:dev']
       }
     }
   });
@@ -74,7 +59,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'sass:dev',
-    'coffee:dev',
     'watch'
   ]);
 };

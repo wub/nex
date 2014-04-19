@@ -1,17 +1,103 @@
+$header-pad: 18px 36px;
+
 .header {
-    padding: 25px 0;
+    margin: 15px 0 10px 0;
 
-    a {
-        padding: 0 10px;
+    .logo {
+        display: inline-block;
+        padding: $header-pad;
+        padding-left: 0;
+        font-size: 23px;
         text-decoration: none;
-        color: $header-link;
+    }
+}
 
-        &:hover {
-            opacity: .7;
+.menu {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    > ul {
+        float: right;
+        margin-right: -18px;
+    }
+
+    > ul > li {
+        display: inline-block;
+
+        > a, > span {
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+            padding: $header-pad;
+            color: #999;
+
+            &:hover {
+                color: #333;
+            }
         }
 
-        &.logo {
-            font-weight: 600;
+        &.menu-open span,
+        &.menu-open > span:hover {
+            color: #fff;
+            background: #333;
         }
     }
+
+    .menu-sub-inner {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 1.875em;
+    }
+
+    .menu-sub {
+        display: none;
+        position: absolute;
+        background: #333;
+        width: 100%;
+        left: 0;
+        z-index: 99;
+
+        h4 {
+            color: #afdefa;
+            padding: 2em 0 0.6em;
+            margin: 0;
+            font-size: 160%;
+            font-weight: 300;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .menu-sub-inner {
+        &:before, &:after {
+            content: ' ';
+            display: table;
+        }
+
+        &:after {
+            clear: both;
+        }
+
+        > div {
+            width: 33%;
+            float: left;
+            padding: 0 2em 0;
+
+            a {
+                line-height: 2em;
+            }
+        }
+    }
+
+}
+
+.menu-open .menu-sub {
+    display: block;
+    padding-bottom: 3em;
 }

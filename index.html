@@ -9,45 +9,97 @@
 <body>
     <div class="container">
         <div class="row header">
-            <div class="columns-12">
-                <a class="logo">Nex</a>
-
-                <nav style="float:right">
-                    <a href="#">Home</a>
-                    <a href="#">Mods</a>
-                    <a href="#">News</a>
-                    <a href="#">Tutorials</a>
-                    <a href="#">Assets</a>
-                    <a href="#">Community</a>
-                    <a href="#">About</a>
+            <div class="columns-2">
+                <a href="#" class="logo">Nex</a>
+            </div>
+            <div class="columns-10">
+                <nav id="menu" class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <span>Downloads</span>
+                            <div class="menu-sub">
+                                <div class="menu-sub-inner">
+                                    <div>
+                                        <h4>Mods</h4>
+                                        <ul>
+                                            <li><a href="#">Most popular</a></li>
+                                            <li><a href="#">Newest</a></li>
+                                            <li><a href="#">Something else</a></li>
+                                            <li><a href="#">Create a dog</a></li>
+                                            <li><a href="#">Create a dog</a></li>
+                                            <li><a href="#">Add your own</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>Assets</h4>
+                                        <ul>
+                                            <li><a href="#">Sound packs</a></li>
+                                            <li><a href="#">Images</a></li>
+                                        </ul>
+                                        <h4>Media</h4>
+                                        <ul>
+                                            <li><a href="#">Wallpapers</a></li>
+                                            <li><a href="#">Cursors</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>Images</h4>
+                                        <img alt="" src="http://placehold.it/200x100">
+                                        <img alt="" src="http://placehold.it/200x100">
+                                        <img alt="" src="http://placehold.it/200x100">
+                                    </div>
+                                </div><!-- /menu-sub-inner -->
+                            </div><!-- /menu-sub -->
+                        </li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Buy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </nav>
             </div>
         </div>
-        <div class="row">
-            <div class="columns-4 featured">
-                <a href="#" class="big-link"></a>
-                <div class="feature-meta">
-                    <h2><a href="#">Climates of Tug</a></h2>
-                </div>
-                <div class="image-window shadowbox" style="height:350px; width:340px;">
-                    <img alt="" height="350" src="http://www.nerdkingdom.com/img/tugconcept1.jpg">
-                </div>
-            </div>
-            <div class="columns-4">
 
-            </div>
-            <div class="columns-4">
-            </div>
+        <div class="row collapse">
+            <a href="#" class="columns-4 featured">
+                <img class="featured-image" alt="Sleeping Golems" src="http://www.nerdkingdom.com/img/tugconcept7.jpg">
+                <div class="featured-type news">News</div>
+                <div class="featured-meta">
+                    <h2>Sleeping Golems</h2>
+                    <p>Awaken the archaic titans at your own peril</p>
+                    <div class="stats">
+                        <strong>2,352</strong> views &bull; <strong>1,091</strong> downloads
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="columns-4 featured">
+                <img class="featured-image" alt="Swamp Biomes" src="http://www.nerdkingdom.com/img/tugconcept2.jpg">
+                <div class="featured-meta">
+                    <h2>Swamp Biomes</h2>
+                    <p>Wade through murky toad juice!</p>
+                </div>
+            </a>
+            <a href="#" class="columns-4 featured">
+                <img class="featured-image" alt="Snow Things" src="http://www.nerdkingdom.com/img/tugconcept8.jpg">
+                <div class="featured-meta">
+                    <h2>Snow Things</h2>
+                    <p>Like that thing from Star Wars</p>
+                </div>
+            </a>
         </div>
 
         <div class="row">
-            <div class="columns-6">
-                <h2>Hello</h2>
+            <div class="columns-7">
+                <h2>News</h2>
             </div>
-            <div class="columns-6">
+            <div class="columns-5">
                 <h2>Hello</h2>
             </div>
         </div>
     </div>
+
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="assets/source/scripts/nex.js"></script><!-- TODO: grunt uglify this -->
 </body>
 </html>
