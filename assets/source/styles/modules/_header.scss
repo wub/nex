@@ -1,0 +1,17 @@
+.header {
+    padding: 25px 0;
+
+    a {
+        padding: 0 10px;
+        text-decoration: none;
+        color: $header-link;
+
+        &:hover {
+            opacity: .7;
+        }
+
+        &.logo {
+            font-weight: 600;
+        }
+    }
+}
