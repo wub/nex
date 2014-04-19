@@ -625,7 +625,6 @@ img {
   line-height: 1;
   display: inline-block;
   vertical-align: middle;
-  margin: -3px 10px 0 0;
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -666,7 +665,7 @@ img {
 
 .header-search {
   float: left;
-  margin: 9px 0 0 15px;
+  margin: 10px 0 0 15px;
   padding: 6px 10px 5px; }
   .header-search::-webkit-input-placeholder {
     font-weight: 200; }
@@ -690,11 +689,12 @@ img {
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
-    padding: 13px 17px;
+    padding: 15px 17px;
     color: #999;
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 15px; }
     .menu > ul > li > a:hover, .menu > ul > li > span:hover {
-      color: #333; }
+      color: #666; }
   .menu > ul > li.menu-open span, .menu > ul > li.menu-open > span:hover {
     color: #444;
     background: #f2f2f2;
