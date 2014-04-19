@@ -273,9 +273,10 @@ input {
   width: 25%; }
 
 .module {
-  padding: 0 20px;
+  padding: 0 20px 25px 20px;
   background: #f3f3f3;
-  border: 1px solid #e5e5e5; }
+  border: 1px solid #e5e5e5;
+  border-top-style: none; }
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
@@ -607,6 +608,41 @@ h1, h2, h3, .menu .menu-sub .menu-title, h4 {
 img {
   max-width: 100%; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?-m40rei');
+  src: url('../fonts/icomoon.eot?#iefix-m40rei') format('embedded-opentype'), url('../fonts/icomoon.woff?-m40rei') format('woff'), url('../fonts/icomoon.ttf?-m40rei') format('truetype'), url('../fonts/icomoon.svg?-m40rei#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"], .logo {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 10px 0 0;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-nex:before, .logo:before {
+  content: '\e600';
+  margin: 0;
+  height: 32px;
+  width: 32px;
+  float: left;
+  margin-top: 11px;
+  font-size: 36px;
+  color: #000; }
+
+.icon-disk:before {
+  content: '\e602'; }
+
 .header-wrap {
   margin-bottom: 20px;
   padding-bottom: 3px;
@@ -620,13 +656,7 @@ img {
   height: 50px; }
   .header .logo {
     display: inline-block;
-    float: left;
-    margin-top: 11px;
-    width: 32px;
-    height: 32px;
-    text-indent: -999px;
-    background-image: url('../source/images/nex.svg');
-    background-size: 100%; }
+    float: left; }
 
 .header-search {
   float: left;
@@ -739,3 +769,11 @@ img {
     text-transform: uppercase;
     color: #eee;
     transition: 0.1s opacity ease; }
+
+.alert {
+  margin-bottom: 18px;
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 2px solid #33485f; }
