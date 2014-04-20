@@ -138,7 +138,6 @@ img.scale-with-grid {
 input {
   display: inline-block;
   font-size: 14px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   border: 1px solid #ccc;
   text-decoration: none;
@@ -270,11 +269,10 @@ input {
 .collapse .columns-4 {
   width: 370px; }
 .collapse .columns-3 {
-  width: 25%; }
+  width: 277.5px; }
 
-.module {
+.section {
   padding: 0 20px 25px 20px;
-  background: #f3f3f3;
   border: 1px solid #e5e5e5;
   border-top-style: none; }
 
@@ -605,6 +603,18 @@ html, body {
 h1, h2, h3, .menu .menu-sub .menu-title, h4 {
   font-weight: 600; }
 
+input {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding: 8px 10px 10px;
+  border-radius: 3px;
+  outline: none; }
+
+
 img {
   max-width: 100%; }
 
@@ -663,18 +673,36 @@ img {
       visibility: hidden;
       width: 0; }
 
+.header-account {
+  display: inline-block;
+  float: left;
+  height: 54px;
+  padding: 0 20px;
+  line-height: 54px;
+  margin: 0 10px 0 20px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-style: none solid;
+  color: #aaa; }
+
 .header-search {
   float: left;
-  margin: 10px 0 0 15px;
-  padding: 6px 10px 5px; }
-  .header-search::-webkit-input-placeholder {
-    font-weight: 200; }
-  .header-search:-moz-placeholder {
-    font-weight: 200; }
-  .header-search::-moz-placeholder {
-    font-weight: 200; }
-  .header-search:-ms-input-placeholder {
-    font-weight: 200; }
+  padding: 4px 0 0 5px;
+  height: 54px;
+  border-right: 1px solid #ddd; }
+  .header-search input {
+    background: none;
+    border: none;
+    font-size: 20px;
+    height: 50px; }
+    .header-search input::-webkit-input-placeholder {
+      font-weight: 200; }
+    .header-search input:-moz-placeholder {
+      font-weight: 200; }
+    .header-search input::-moz-placeholder {
+      font-weight: 200; }
+    .header-search input:-ms-input-placeholder {
+      font-weight: 200; }
 
 .menu ul {
   margin: 0;

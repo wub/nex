@@ -13,7 +13,12 @@
             <div class="row header">
                 <div class="columns-5">
                     <a href="#" class="logo"><div>Nex</div></a>
-                    <input class="header-search" placeholder="Search..." size="23">
+                    <div class="header-account">
+                        &lt;account&gt;
+                    </div>
+                    <div class="header-search">
+                        <input placeholder="Search..." size="10">
+                    </div>
                 </div>
                 <div class="columns-7">
                     <nav id="menu" class="menu">
@@ -99,16 +104,38 @@
             </a>
         </div>
 
-        <div class="row module">
+        <div class="row section">
             <div class="columns-7">
-                <h3>Nex is a gaming community</h3>
+                x
             </div>
-            <div class="columns-5">
-
-            </div>
+            <aside class="columns-5">
+                <div class="module module-poll">
+                    <form id="poll">
+                        <input type="hidden" name="poll" value="1"><!-- which poll is dis -->
+                        <div class="poll-question">Which best describes your sharing habits?</div>
+                        <div class="poll-answers">
+                            <div>
+                                <input type="radio" id="poll-1" name="poll-1" value="1">
+                                <label for="poll-1">I typically only share pages that have sharing buttons.</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="poll-2" name="poll-2" value="2">
+                                <label for="poll-2">I don't ever use sharing buttons. I share my own way.</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="poll-3" name="poll-3" value="3">
+                                <label for="poll-3">I can go either way.</label>
+                            </div>
+                        </div>
+                        <div class="voting-buttons">
+                            <a class="button button-positive">Vote</a> &nbsp; <a><small>View results</small></a>
+                        </div>
+                    </form>
+                </div>
+            </aside>
         </div>
 
-        <div class="row module">
+        <div class="row section">
             <div class="columns-7">
                 <article>
                     <h2>Lorem ipsum dolor</h2>
