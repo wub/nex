@@ -249,7 +249,7 @@ input {
   margin-left: 8.81818%; }
 
 body {
-  padding-top: 60px;
+  padding-top: 50px;
   background: #e7e7e2; }
 
 *, *:after, *:before {
@@ -670,8 +670,6 @@ img {
 
 .site-nav-wrap {
   width: 100%;
-  background: #fff;
-  border-bottom: 1px solid #ccc;
   position: fixed;
   top: 0;
   z-index: 9999; }
@@ -680,8 +678,9 @@ img {
   zoom: 1;
   margin: 0 auto;
   width: 1110px;
-  border: 1px solid #ddd;
-  border-width: 0 1px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
   height: 50px; }
 
 .site-nav-item {
