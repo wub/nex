@@ -1,5 +1,10 @@
 $container-width: 1110px;
 
+body {
+    padding-top: 60px;
+    background: #e7e7e2;
+}
+
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -37,7 +42,7 @@ $container-width: 1110px;
 
 .section {
     padding: 0 20px 25px 20px;
-//    background: #f3f3f3;
-    border: 1px solid #e5e5e5;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
     border-top-style: none;
 }

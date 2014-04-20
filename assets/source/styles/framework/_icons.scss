@@ -9,7 +9,7 @@
     font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"], .logo {
+[class^="icon-"], [class*=" icon-"], .site-nav-logo {
     font-family: 'icomoon';
     speak: none;
     font-style: normal;
@@ -25,13 +25,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-nex:before, .logo:before {
+.icon-nex:before, .site-nav-logo:before {
     content: '\e600';
-    margin: 0;
     height: 32px;
     width: 32px;
     float: left;
-    margin-top: 11px;
+    margin-top: 6px;
     font-size: 36px;
     color: inherit;
 }
