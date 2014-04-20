@@ -624,18 +624,20 @@ img {
   max-width: 100%; }
 
 @font-face {
-  font-family: 'nex';
-  src: url('../fonts/nex.woff') format('woff');
+  font-family: 'Nex';
   font-weight: normal;
-  font-style: normal; }
-
-[class^="icon-"], [class*=" icon-"], .site-nav-logo, .site-nav-search-submit {
-  font-family: 'nex';
-  speak: none;
   font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  src: url('../fonts/nex.eot');
+  src: local('ñêx'), url('../fonts/nex.woff') format('woff'), url('../fonts/nex.ttf') format('truetype'); }
+
+[data-icon]:before {
+  font-family: 'Nex' !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
   line-height: 1;
   display: inline-block;
   vertical-align: middle;
@@ -643,17 +645,14 @@ img {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-nex:before, .site-nav-logo:before {
-  content: '\e600';
-  height: 32px;
-  width: 32px;
-  float: left;
-  margin-top: 6px;
-  font-size: 36px;
-  color: inherit; }
+.icon-nex:before {
+  content: 'n'; }
+
+.icon-user:before {
+  content: 'e'; }
 
 .icon-search:before {
-  content: '\e601'; }
+  content: 'x'; }
 
 .site-nav-wrap {
   width: 100%;
@@ -676,15 +675,18 @@ img {
   font-size: 18px;
   padding: 5px 11px; }
 
-.site-nav-item-logo {
-  padding: 0 15px 0 10px; }
 
 .site-nav-logo {
-  display: block;
+  display: inline-block;
   position: relative;
   color: #666; }
   .site-nav-logo div {
     text-indent: -5000px; }
+  .site-nav-logo:before {
+    float: left;
+    padding-top: 4px;
+    font-size: 32px;
+    color: inherit; }
 
 nav ul, nav ol {
   list-style: none;
@@ -703,10 +705,8 @@ nav ul, nav ol {
   color: #666; }
 
 .site-nav-item-search {
-  float: left;
-  height: 50px;
-  margin: 0 0 0 10px;
-  padding: 0 5px; }
+  float: right;
+  height: 50px; }
 
 .site-nav-search-form {
   position: relative; }
@@ -716,19 +716,29 @@ nav ul, nav ol {
   border-width: 0 1px;
   height: 49px;
   width: 257px;
-  padding: 0 10px 0 43px;
+  padding: 0 10px 0 48px;
   font-size: 15px; }
 
 .site-nav-search-submit {
-  display: inline-block;
   position: absolute;
   left: 13px;
-  top: 17px;
-  height: 36px;
-  width: 36px;
-  z-index: 20;
-  font-size: 16px;
-  color: #666; }
+  top: 10px;
+  z-index: 20; }
+  .site-nav-search-submit:before {
+    font-size: 16px;
+    color: #888; }
+
+.site-nav-user-container {
+  float: right; }
+
+.site-nav-login-button {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding-top: 7px; }
+  .site-nav-login-button:before {
+    color: #888; }
 
 footer {
   background: #fff;

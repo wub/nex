@@ -1,36 +1,35 @@
 @font-face {
-    font-family: 'nex';
-    src: url('../fonts/nex.woff') format('woff');
+    font-family: 'Nex';
     font-weight: normal;
     font-style: normal;
+    src: url('../fonts/nex.eot');
+    src: local('ñêx'),
+         url('../fonts/nex.woff') format('woff'),
+         url('../fonts/nex.ttf') format('truetype');
 }
 
-[class^="icon-"], [class*=" icon-"], .site-nav-logo, .site-nav-search-submit  {
-    font-family: 'nex';
+[data-icon]:before {
+    font-family: 'Nex' !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
     speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
     line-height: 1;
     display: inline-block;
     vertical-align: middle;
     font-size: 24px;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-nex:before, .site-nav-logo:before {
-    content: '\e600';
-    height: 32px;
-    width: 32px;
-    float: left;
-    margin-top: 6px;
-    font-size: 36px;
-    color: inherit;
+.icon-nex:before {
+  content: 'n';
 }
-
+.icon-user:before {
+  content: 'e';
+}
 .icon-search:before {
-    content: '\e601';
+  content: 'x';
 }

@@ -23,16 +23,22 @@
 }
 
 .site-nav-item-logo {
-    padding: 0 15px 0 10px;
 }
 
 .site-nav-logo {
-    display: block;
+    display: inline-block;
     position: relative;
     color: #666;
 
     div {
         text-indent: -5000px;
+    }
+
+    &:before {
+        float: left;
+        padding-top: 4px;
+        font-size: 32px;
+        color: inherit;
     }
 }
 
@@ -56,10 +62,9 @@ nav ul, nav ol {
 }
 
 .site-nav-item-search {
-    float: left;
+    float: right;
     height: 50px;
-    margin: 0 0 0 10px;
-    padding: 0 5px;
+//    margin: 0 0 0 15px;
 }
 
 .site-nav-search-form {
@@ -71,18 +76,35 @@ nav ul, nav ol {
     border-width: 0 1px;
     height: 49px;
     width: 257px;
-    padding: 0 10px 0 43px;
+    padding: 0 10px 0 48px;
     font-size: 15px;
 }
 
 .site-nav-search-submit {
-    display: inline-block;
     position: absolute;
     left: 13px;
-    top: 17px;
-    height: 36px;
-    width: 36px;
+    top: 10px;
     z-index: 20;
-    font-size: 16px;
-    color: #666;
+
+    &:before {
+        font-size: 16px;
+        color: #888;
+    }
+}
+
+.site-nav-user-container {
+    float: right;
+//    border-left: 1px solid #ddd;
+}
+
+.site-nav-login-button {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding-top: 7px;
+
+    &:before {
+        color: #888;
+    }
 }
