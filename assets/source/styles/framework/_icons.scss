@@ -1,16 +1,12 @@
 @font-face {
-    font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot?-m40rei');
-    src:url('../fonts/icomoon.eot?#iefix-m40rei') format('embedded-opentype'),
-        url('../fonts/icomoon.woff?-m40rei') format('woff'),
-        url('../fonts/icomoon.ttf?-m40rei') format('truetype'),
-        url('../fonts/icomoon.svg?-m40rei#icomoon') format('svg');
+    font-family: 'nex';
+    src: url('../fonts/nex.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"], .site-nav-logo {
-    font-family: 'icomoon';
+[class^="icon-"], [class*=" icon-"], .site-nav-logo, .site-nav-search-submit  {
+    font-family: 'nex';
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -35,6 +31,6 @@
     color: inherit;
 }
 
-.icon-disk:before {
-    content: '\e602';
+.icon-search:before {
+    content: '\e601';
 }

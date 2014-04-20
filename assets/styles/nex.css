@@ -135,16 +135,6 @@ img.scale-with-grid {
 
 /* #Forms
 ================================================== */
-input {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 1.5;
-  border: 1px solid #ccc;
-  text-decoration: none;
-  margin-bottom: 20px;
-  padding: 8px 10px 10px;
-  border-radius: 3px;
-  outline: none; }
 
 /* Grid Variables
 --------------------------------------------------- */
@@ -620,30 +610,27 @@ a {
 
 input {
   display: inline-block;
-  font-size: 14px;
-  line-height: 1.5;
-  border: 1px solid #ccc;
-  text-decoration: none;
-  margin-bottom: 20px;
-  padding: 8px 10px 10px;
-  border-radius: 3px;
+  font-size: 16px;
   outline: none; }
 
 .button {
   font-weight: 600; }
+  .button.nostyle {
+    background: transparent;
+    margin: 0;
+    padding: 0; }
 
 img {
   max-width: 100%; }
 
 @font-face {
-  font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?-m40rei');
-  src: url('../fonts/icomoon.eot?#iefix-m40rei') format('embedded-opentype'), url('../fonts/icomoon.woff?-m40rei') format('woff'), url('../fonts/icomoon.ttf?-m40rei') format('truetype'), url('../fonts/icomoon.svg?-m40rei#icomoon') format('svg');
+  font-family: 'nex';
+  src: url('../fonts/nex.woff') format('woff');
   font-weight: normal;
   font-style: normal; }
 
-[class^="icon-"], [class*=" icon-"], .site-nav-logo {
-  font-family: 'icomoon';
+[class^="icon-"], [class*=" icon-"], .site-nav-logo, .site-nav-search-submit {
+  font-family: 'nex';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -665,8 +652,8 @@ img {
   font-size: 36px;
   color: inherit; }
 
-.icon-disk:before {
-  content: '\e602'; }
+.icon-search:before {
+  content: '\e601'; }
 
 .site-nav-wrap {
   width: 100%;
@@ -715,10 +702,38 @@ nav ul, nav ol {
   text-decoration: none;
   color: #666; }
 
+.site-nav-item-search {
+  float: left;
+  height: 50px;
+  margin: 0 0 0 10px;
+  padding: 0 5px; }
+
+.site-nav-search-form {
+  position: relative; }
+
+.site-nav-search {
+  border: 1px solid #ddd;
+  border-width: 0 1px;
+  height: 49px;
+  width: 257px;
+  padding: 0 10px 0 43px;
+  font-size: 15px; }
+
+.site-nav-search-submit {
+  display: inline-block;
+  position: absolute;
+  left: 13px;
+  top: 17px;
+  height: 36px;
+  width: 36px;
+  z-index: 20;
+  font-size: 16px;
+  color: #666; }
+
 footer {
   background: #fff;
   margin-bottom: 50px;
-  padding: 25px 25px 22px 25px;
+  padding: 22px 25px;
   border: 1px solid #ccc;
   border-top: none; }
   footer nav, footer .copyright {
@@ -779,26 +794,28 @@ footer {
   border-radius: 3px;
   border: 2px solid #33485f; }
 
-.news-list article {
-  padding: 20px 0;
-  border-bottom: 1px solid #ccc; }
-  .news-list article:last-of-type {
-    border-bottom: none; }
-  .news-list article h1 {
-    margin: 0;
-    font-size: 22px;
-    line-height: 1.2; }
-    .news-list article h1 a {
-      text-decoration: none; }
-  .news-list article p {
-    padding-top: 8px; }
-  .news-list article .meta {
-    padding: 5px 0;
-    font-size: 14px;
-    color: #666; }
-    .news-list article .meta a {
-      text-decoration: none;
-      color: #444; }
+.news-list {
+  font-size: 16px; }
+  .news-list article {
+    padding: 15px 0;
+    border-bottom: 1px dotted #ccc; }
+    .news-list article:last-of-type {
+      border-bottom: none; }
+    .news-list article h1 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.2; }
+      .news-list article h1 a {
+        text-decoration: none; }
+    .news-list article p {
+      margin: 8px 0 0 0; }
+    .news-list article .meta {
+      padding: 5px 0;
+      font-size: 14px;
+      color: #666; }
+      .news-list article .meta a {
+        text-decoration: none;
+        color: #444; }
 
 .popular-list section h1 {
   color: #666;

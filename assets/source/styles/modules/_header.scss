@@ -54,3 +54,35 @@ nav ul, nav ol {
     text-decoration: none;
     color: #666;
 }
+
+.site-nav-item-search {
+    float: left;
+    height: 50px;
+    margin: 0 0 0 10px;
+    padding: 0 5px;
+}
+
+.site-nav-search-form {
+    position: relative;
+}
+
+.site-nav-search {
+    border: 1px solid #ddd;
+    border-width: 0 1px;
+    height: 49px;
+    width: 257px;
+    padding: 0 10px 0 43px;
+    font-size: 15px;
+}
+
+.site-nav-search-submit {
+    display: inline-block;
+    position: absolute;
+    left: 13px;
+    top: 17px;
+    height: 36px;
+    width: 36px;
+    z-index: 20;
+    font-size: 16px;
+    color: #666;
+}

@@ -18,16 +18,17 @@ a {
 
 input {
   display: inline-block;
-  font-size: 14px;
-  line-height: 1.5;
-  border: 1px solid #ccc;
-  text-decoration: none;
-  margin-bottom: 20px;
-  padding: 8px 10px 10px;
-  border-radius: 3px;
+  font-size: 16px;
   outline: none;
 }
 
 .button {
     font-weight: 600;
+
+    &.nostyle {
+        background: transparent;
+        margin: 0;
+        padding: 0;
+    }
 }
+
