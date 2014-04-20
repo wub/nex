@@ -1,0 +1,36 @@
+.popular-list {
+    section {
+        h1 {
+            color: #666;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding-top: 15px;
+        }
+    }
+}
+
+.popular-post, .popular-mod {
+    display: block;
+    padding: 10px 0 20px 0;
+    text-decoration: none;
+    border-bottom: 1px dotted #ccc;
+
+    .post-title {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 4px;
+        color: #333;
+    }
+
+    .post-meta {
+        font-size: 12px;
+        color: #666;
+    }
+}
+
+.popular-mod {
+}

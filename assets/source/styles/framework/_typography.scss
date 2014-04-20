@@ -1,9 +1,33 @@
-$font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 html, body {
   font: 18px/1.6 $font-family;
 }
 
 h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+a {
+    color: $primary;
+
+    &:hover {
+        color: #555;
+    }
+}
+
+input {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding: 8px 10px 10px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.button {
     font-weight: 600;
 }

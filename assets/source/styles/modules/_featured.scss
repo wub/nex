@@ -9,21 +9,13 @@
             height: 90px;
         }
 
+        h2, p {
+            color: #fff;
+        }
+
         .stats {
             opacity: 1;
             transition: .1s opacity ease;
-        }
-    }
-
-    &:first-child {
-        img {
-            border-radius: 5px 0 0 0;
-        }
-    }
-
-    &:last-child {
-        img {
-            border-radius: 0 5px 0 0;
         }
     }
 }
@@ -43,7 +35,7 @@
     h2, p {
         margin: 0;
         padding: 0;
-        color: #fff;
+        color: #ccc;
     }
 
     h2 {

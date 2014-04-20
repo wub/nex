@@ -1,0 +1,35 @@
+.news-list {
+    article {
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 22px;
+            line-height: 1.2;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        p {
+            padding-top: 8px;
+        }
+
+        .meta {
+            padding: 5px 0;
+            font-size: 14px;
+            color: #666;
+
+            a {
+             text-decoration: none;
+                color: #444;
+            }
+        }
+    }
+}
