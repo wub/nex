@@ -2,10 +2,10 @@
     font-family: 'Nex';
     font-weight: normal;
     font-style: normal;
-    src: url('../fonts/nex.eot');
+    src: url('nex.eot');
     src: local('ñêx'),
-         url('../fonts/nex.woff') format('woff'),
-         url('../fonts/nex.ttf') format('truetype');
+         url('nex.woff') format('woff'),
+         url('nex.ttf') format('truetype');
 }
 
 [data-icon]:before {
