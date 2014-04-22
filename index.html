@@ -10,7 +10,7 @@
     <div class="site-nav-wrap">
         <nav class="site-nav">
             <div class="site-nav-item site-nav-item-logo">
-                <a href="/" class="site-nav-logo"><div>Nex</div></a>
+                <a href="/" class="site-nav-logo" data-icon="n"><div>Nex</div></a>
             </div>
             <ul class="site-nav-list">
                 <li class="site-nav-item">
@@ -25,11 +25,29 @@
                 <li class="site-nav-item">
                     <a class="site-nav-primary-link" href="#">Media</a>
                 </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-primary-link" href="#">Buy</a>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-primary-link" href="#">Contact</a>
+                </li>
             </ul>
+            <div class="site-nav-user-container">
+                <a href="/login" class="site-nav-login-button" data-icon="e"></a>
+            </div>
+            <div class="site-nav-item-search">
+                <form action="/search" method="get" class="site-nav-search-form">
+                    <input name="search" id="search" class="site-nav-search" placeholder="Search for anything" autocomplete="off">
+                    <i class="site-nav-search-submit" data-icon="x"></i>
+                </form>
+            </div>
         </nav>
     </div>
 
     <div class="container">
+        <div class="row">
+            <div id="stripe-loader" style="height:0"></div>
+        </div>
         <div class="row section">
             <div class="columns-7">
                 <h2>Welcome to your Nex community</h2>
@@ -127,6 +145,7 @@
                         <div class="post-meta"><strong>55</strong> replies &bull; <strong>147</strong> views</div>
                     </a>
                 </section>
+<!--
                 <section>
                     <h1>Mods</h1>
                     <a class="popular-mod" href="#">
@@ -135,7 +154,12 @@
                         <div class="post-meta"><strong>9,969</strong> downloads &bull; <strong>15,929</strong> views</div>
                     </a>
                 </section>
+-->
             </div>
+        </div>
+
+        <div class="row">
+
         </div>
 
         <footer>
@@ -152,5 +176,9 @@
             <div class="copyright">Copyright &copy; Nex 2014</div>
         </footer>
     </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="assets/source/scripts/nex.js"></script>
+
 </body>
 </html>

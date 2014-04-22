@@ -1,40 +1,35 @@
 @font-face {
-    font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot?-m40rei');
-    src:url('../fonts/icomoon.eot?#iefix-m40rei') format('embedded-opentype'),
-        url('../fonts/icomoon.woff?-m40rei') format('woff'),
-        url('../fonts/icomoon.ttf?-m40rei') format('truetype'),
-        url('../fonts/icomoon.svg?-m40rei#icomoon') format('svg');
+    font-family: 'Nex';
     font-weight: normal;
     font-style: normal;
+    src: url('../fonts/nex.eot');
+    src: local('ñêx'),
+         url('../fonts/nex.woff') format('woff'),
+         url('../fonts/nex.ttf') format('truetype');
 }
 
-[class^="icon-"], [class*=" icon-"], .site-nav-logo {
-    font-family: 'icomoon';
+[data-icon]:before {
+    font-family: 'Nex' !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
     speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
     line-height: 1;
     display: inline-block;
     vertical-align: middle;
     font-size: 24px;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-nex:before, .site-nav-logo:before {
-    content: '\e600';
-    height: 32px;
-    width: 32px;
-    float: left;
-    margin-top: 6px;
-    font-size: 36px;
-    color: inherit;
+.icon-nex:before {
+  content: 'n';
 }
-
-.icon-disk:before {
-    content: '\e602';
+.icon-user:before {
+  content: 'e';
+}
+.icon-search:before {
+  content: 'x';
 }
