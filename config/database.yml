@@ -1,6 +1,6 @@
 development: &default
   adapter: postgresql
-  database: nex_development
+  database: nex
   encoding: utf8
   min_messages: warning
   pool: 2
