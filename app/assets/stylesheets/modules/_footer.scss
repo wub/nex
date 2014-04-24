@@ -2,11 +2,13 @@ footer {
     background: #fff;
     margin-bottom: 50px;
     padding: 22px 25px;
+    height: 73px;
     border: 1px solid #ccc;
     border-top: none;
 
     nav, .copyright {
         display: inline-block;
+        float: left;
     }
 
     .copyright {

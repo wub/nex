@@ -1,0 +1,32 @@
+input {
+  display: inline-block;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #888;
+    background: #fff;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.button, button {
+    font-weight: 600;
+
+    &.nostyle {
+        background: transparent;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}

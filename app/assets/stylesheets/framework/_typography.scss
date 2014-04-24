@@ -15,20 +15,3 @@ a {
         color: #555;
     }
 }
-
-input {
-  display: inline-block;
-  font-size: 16px;
-  outline: none;
-}
-
-.button {
-    font-weight: 600;
-
-    &.nostyle {
-        background: transparent;
-        margin: 0;
-        padding: 0;
-    }
-}
-

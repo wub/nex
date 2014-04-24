@@ -1,8 +1,8 @@
-/* Buttons
+/* Buttons (Skeleton)
 ================================================== */
 
 // Todo list
-// - Large and small buttons 
+// - Large and small buttons
 // - Disabled button
 // - Block level button
 
@@ -10,17 +10,18 @@
  button {
   display: inline-block;
   font-size: 14px;
-  border: 1px solid $primary;
+  border: 1px solid #888;
   border-radius: 3px;
   text-decoration: none;
-  margin-bottom: 20px;
+  margin: 10px 5px 20px 0;
   padding: 8px 30px 10px;
-  border-radius: 3px;
+  background-color: #fff;
+
   &:hover,
   &.button-filled {
     color: $white;
-    background-color: $primary;
-    border-color: $primary;  
+    background-color: #ddd;
+    border-color: $primary;
   }
   &.button-filled:hover {
     border-color: darken($primary, 8%);
@@ -40,7 +41,7 @@
   &.button-filled {
     color: $white;
     background-color: $positive;
-    border-color: $positive;  
+    border-color: $positive;
   }
   &.button-filled:hover {
     border-color: darken($positive, 8%);
@@ -56,7 +57,7 @@
   &.button-filled {
     color: $white;
     background-color: $negative;
-    border-color: $negative;  
+    border-color: $negative;
   }
   &.button-filled:hover {
     border-color: darken($negative, 8%);
