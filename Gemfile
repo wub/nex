@@ -29,6 +29,7 @@ gem 'unicorn'
 
 # Auth
 gem 'devise'
+gem 'pundit'
 
 group :development do
   gem 'foreman'
