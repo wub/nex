@@ -1,11 +1,11 @@
-.site-nav-wrap {
+.nav-wrap {
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 9999;
 }
 
-.site-nav {
+.nav {
     zoom: 1;
     margin: 0 auto;
     width: $container-width;
@@ -15,17 +15,17 @@
     height: 50px;
 }
 
-.site-nav-item {
+.nav-item {
     float: left;
     height: 50px;
     font-size: 18px;
     padding: 5px 11px;
 }
 
-.site-nav-item-logo {
+.nav-item-logo {
 }
 
-.site-nav-logo {
+.nav-logo {
     display: inline-block;
     position: relative;
     color: #666;
@@ -47,7 +47,7 @@ nav ul, nav ol {
     list-style-image: none;
 }
 
-.site-nav-list {
+.nav-list {
     box-sizing: border-box;
     float: left;
     height: 50px;
@@ -55,23 +55,23 @@ nav ul, nav ol {
     padding-left: 10px;
 }
 
-.site-nav-primary-link {
+.nav-link {
     position: relative;
     text-decoration: none;
     color: #666;
 }
 
-.site-nav-item-search {
+.nav-item-search {
     float: right;
     height: 50px;
 //    margin: 0 0 0 15px;
 }
 
-.site-nav-search-form {
+.nav-search-form {
     position: relative;
 }
 
-.site-nav-search {
+.nav-search {
     border: 1px solid #ddd;
     border-width: 0 1px;
     height: 49px;
@@ -80,7 +80,7 @@ nav ul, nav ol {
     font-size: 15px;
 }
 
-.site-nav-search-submit {
+.nav-search-submit {
     position: absolute;
     left: 13px;
     top: 10px;
@@ -92,12 +92,12 @@ nav ul, nav ol {
     }
 }
 
-.site-nav-user-container {
+.nav-user-container {
     float: right;
 //    border-left: 1px solid #ddd;
 }
 
-.site-nav-login-button {
+.nav-login-button {
     display: inline-block;
     height: 50px;
     width: 50px;

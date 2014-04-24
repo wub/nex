@@ -5,10 +5,12 @@
         even remove it entirely if you'd like. If you get stuck, you're on your own
         because we haven't documented it yet HAHA.</p>
 
-        <p>
-            <a href="/register" class="button button-positive">Register</a>
-            <a href="/login" class="button">Log in</a>
-        </p>
+        <% if not user_signed_in? %>
+            <p>
+                <a href="/register" class="button button-positive">Register</a>
+                <a href="/login" class="button">Log in</a>
+            </p>
+        <% end %>
     </div>
     <aside class="columns-5">
         <div class="module">

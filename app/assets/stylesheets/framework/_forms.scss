@@ -15,6 +15,14 @@ input[type=email] {
     border-radius: 3px;
 }
 
+input[type=checkbox] {
+    margin-right: 10px;
+}
+
+.hint {
+    font-size: 13px;
+}
+
 .button, button {
     font-weight: 600;
 
