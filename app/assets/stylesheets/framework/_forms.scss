@@ -19,6 +19,12 @@ input[type=checkbox] {
     margin-right: 10px;
 }
 
+input.disabled {
+    background: #eee;
+    border-color: #aaa;
+    color: #666;
+}
+
 .hint {
     font-size: 13px;
 }
