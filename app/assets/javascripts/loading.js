@@ -3,7 +3,7 @@
 
 /* Stripe loader animation */
 var iterator,
-    $target  = $('#stripe-loader'),
+    target  = document.getElementById('stripe-loader'),
     canvas  = document.createElement('canvas'),
     context = canvas.getContext('2d'),
     width   = 1000,
@@ -27,13 +27,13 @@ function stripe() {
             context.fillRect((iterator * random), 0, (50 * random), height);
         }
 
-        $target.css('background', 'url(' + canvas.toDataURL('image/png') + ') repeat-x');
+        target.style.background = canvas.toDataURL('image/png') + ' repeat-x';
     }, 100);
 
-    $target.animate({ height: '8px' });
+    target.style.height = '8px';
 }
 
 function stopStripe() {
     window.clearInterval(applyStripe);
-    $target.animate({ height: 0 });
+    target.style.height = 0;
 }

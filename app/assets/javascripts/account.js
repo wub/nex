@@ -1,15 +1,7 @@
-var $overlay = $('#modal-overlay');
-var $modal   = $('#modal-account');
-var $account = $('#account');
+var uamodal = document.getElementById('modal-account'),
+    overlay = document.getElementById('modal-overlay'),
+    account = document.getElementById('account');
 
-$account.on('click', initAccountModal);
-$modal.on('click', function(e) { e.stopPropagation(); });
-
-function initAccountModal() {
-	$overlay.removeAttr('hidden');
-	$overlay.on('click', closeAccountModal);
-}
-
-function closeAccountModal() {
-	$overlay.attr('hidden', true);
-}
+uamodal.addEventListener('click', function(e) { e.stopPropagation(); });
+account.addEventListener('click', function( ) { overlay.hidden = false; document.body.style.overflow = 'hidden' });
+overlay.addEventListener('click', function( ) { overlay.hidden = true;  document.body.style.overflow = 'auto'   });

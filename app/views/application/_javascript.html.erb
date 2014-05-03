@@ -1,12 +1,16 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> -->
 
 <%= javascript_include_tag :application %>
 
 <%= yield :javascript %>
 
-<% if Rails.env.test? %>
+<!-- < if has_uploader >
+  <script src="/assets/upload.js"></script>
+< end > -->
+
+<!-- <% if Rails.env.test? %>
   <%= javascript_tag do %>
     $.fx.off = true;
     $.ajaxSetup({ async: false });
   <% end %>
-<% end %>
+<% end %> -->
