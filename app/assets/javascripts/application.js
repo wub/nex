@@ -10,8 +10,6 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery-1.10.2.min
-//= require jquery_ujs
-//= require_tree .
-//= require ./account
-//= require ./loading_animation
+//= require vendor/resumable
+//= require account
+//= require loading

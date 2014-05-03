@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
 
+  devise_for :users
   as :user do
     delete '/logout' => 'devise/sessions#destroy'
   	get '/logout' => 'devise/sessions#destroy'
@@ -14,6 +16,9 @@ Rails.application.routes.draw do
 
   get 'profile', to: 'users#index'
   get '/profile/:id', to: 'users#show'
+
+  # File uploads
+  resource :chunk, only: [:create, :show]
 
   root to: 'home#index'
 end
