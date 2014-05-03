@@ -1,36 +1,38 @@
-/*jshint -W117*/
-/*jshint -W098*/
+'use strict';
 
 /* Stripe loader animation */
 var iterator,
+    applyStripe = {},
     target  = document.getElementById('stripe-loader'),
     canvas  = document.createElement('canvas'),
     context = canvas.getContext('2d'),
-    width   = 1000,
-    height  = 8,
-    colours = [
-        '467F71', 'D3F263', '3E8C84',
-        '296B73', 'E52738', 'FEE63F',
-        '3BD2CC', '2BA6E8', 'B4D455'
-    ];
-
-canvas.width = width;
-canvas.height = height;
+    width   = 333,
+    height  = 5,
+    time    = 6,
+    colours = ['467F71', 'D3F263', '3E8C84','296B73', 'E52738', 'FEE63F','3BD2CC', '2BA6E8', 'B4D455'],
+    colours_length = colours.length,
+    canvas_width = canvas.width = width,
+    canvas_height = canvas.height = height;
 
 function stripe() {
-    applyStripe = window.setInterval(function () {
-        for (iterator = 0; iterator < canvas.width; iterator += 1)
-        {
-            var random = Math.floor(Math.random() * 50);
+  applyStripe = window.setInterval(function () {
+      var cursor = 0,
+          max = (canvas_width / 10),
+          min = 1;
 
-            context.fillStyle = '#' + colours[Math.floor(Math.random() * colours.length)];
-            context.fillRect((iterator * random), 0, (50 * random), height);
-        }
+      while (cursor < canvas_width) {
+        var width = (Math.floor(Math.random() * max) + min);
 
-        target.style.background = canvas.toDataURL('image/png') + ' repeat-x';
-    }, 100);
+        context.fillStyle = '#' + colours[Math.floor(Math.random() * colours_length)];
+        context.fillRect(cursor, 0, width, height);
 
-    target.style.height = '8px';
+        cursor += width;
+      }
+
+      target.style.background = 'url(' + canvas.toDataURL('image/png') + ') repeat-x';
+  }, time);
+
+  target.style.height = '5px';
 }
 
 function stopStripe() {
