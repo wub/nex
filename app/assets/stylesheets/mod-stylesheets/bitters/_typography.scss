@@ -1,0 +1,130 @@
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  -webkit-font-smoothing: antialiased;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+}
+
+h1 {
+  font-family: $sans-serif-2;
+  font-size: 1.8em;
+  margin-bottom: .5em;
+}
+
+h2 {
+  font-family: $sans-serif-2;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin-bottom: .9em;
+}
+
+h3 {
+  font-family: $sans-serif-2;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-bottom: .4em;
+}
+
+h4 {
+  font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
+}
+
+h5 {
+  font-size: $base-font-size * 1.25; // 16 * 1.25 = 20px
+}
+
+h6 {
+  font-size: $base-font-size;
+}
+
+p {
+  font-family: $sans-serif;
+  line-height: 1.4em;
+  font-size: 1.05em;
+  font-weight: 300;
+  margin-bottom: 1.5em;
+
+  span {
+    font-family: $sans-serif-2;
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
+}
+
+p.date {
+  color: transparentize($base-font-color, .6);
+  font-family: $sans-serif;
+  font-size: .9em;
+  margin-bottom: .3em;
+}
+
+a {
+  color: $base-link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover-link-color;
+  }
+
+  &:active, &:focus {
+    color: $hover-link-color;
+    outline: none;
+  }
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid $base-border-color;
+  margin: $base-line-height 0;
+  width: 3em;
+}
+
+img {
+  margin: 0;
+  max-width: 100%;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted $base-border-color;
+  cursor: help;
+}
+
+address {
+  display: block;
+  margin: 0 0 ($base-line-height / 2);
+}
+
+hgroup {
+  margin-bottom: $base-line-height / 2;
+}
+
+del {
+  color: lighten($base-font-color, 15);
+}
+
+blockquote {
+  border-left: 2px solid $base-border-color;
+  color: lighten($base-font-color, 15);
+  margin: $base-line-height 0;
+  padding-left: $base-line-height / 2;
+}
+
+cite {
+  color: lighten($base-font-color, 25);
+  font-style: italic;
+
+  &:before {
+    content: '\2014 \00A0';
+  }
+}
