@@ -28,5 +28,5 @@ if [ -d ~/.pow ]
 then
   echo 9292 > ~/.pow/`basename $PWD`
 else
-  echo "Pow not set up but the team uses it for this project. Setup: http://goo.gl/RaDPO"
+  echo "Pow needs to be configured: http://goo.gl/RaDPO"
 fi
