@@ -29,7 +29,7 @@ gem 'pundit'
 # Jobs, caching
 gem 'hiredis' # C connection lib for redis
 gem 'redis', require: ['redis', 'redis/connection/hiredis'] # task db, cache
-# gem 'redis-store'
+gem 'redis-store'
 gem 'sidekiq' # background task worker
 
 # Media libs

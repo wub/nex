@@ -1,3 +1,4 @@
 web: bundle exec puma
-db:  redis-server ./config/image/config/redis.conf
+data: postgres -D /usr/local/var/postgres
+cache: redis-server ./config/image/config/redis.conf
 job: bundle exec sidekiq
